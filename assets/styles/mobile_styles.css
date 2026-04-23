@@ -1,3 +1,55 @@
-@media (min-width: 768px) {
+/* ── MOBILE BASE (< 768px) ── */
+#functionality {
+    padding: 40px 20px;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
 
+.section-title {
+    font-size: 1.8rem;
+    align-self: flex-start;
+}
+
+.benefits-grid {
+    width: 100%;
+    max-width: 400px;
+    gap: 16px;
+}
+
+.benefit-row {
+    flex-direction: column; /* ← cards se apilan verticalmente */
+    align-items: stretch;
+    gap: 16px;
+}
+
+.benefit-icon {
+    display: none; /* ← iconos ocultos en mobile */
+}
+
+.benefit-card {
+    max-width: 100%;
+    min-height: unset;
+    width: 100%;
+}
+
+/* ── TABLET / DESKTOP (≥ 768px) ── */
+@media (min-width: 768px) {
+    .benefits-grid {
+        max-width: 860px;
+    }
+
+    .benefit-row {
+        flex-direction: row; /* ← vuelve al layout horizontal */
+        align-items: center;
+    }
+
+    .benefit-icon {
+        display: inline-block; /* ← iconos visibles de nuevo */
+    }
+
+    .benefit-card {
+        max-width: 340px;
+        min-height: 200px;
+    }
 }

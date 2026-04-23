@@ -1,3 +1,75 @@
 * {
     margin: 0;
 }
+
+/* ── US-05: LO QUE BRINDAMOS ── */
+
+#functionality {
+    padding: 60px 80px;
+    background-color: #e8ecf5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* ← fondo ya no se corta */
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 3rem; /* antes 2.6rem */
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 40px;
+    align-self: flex-start;
+}
+
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto; /* ← centra el bloque completo */
+}
+
+.benefit-row {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ← centra las cards + iconos en cada fila */
+    gap: 20px;
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+    width: 64px;
+    text-align: center;
+}
+
+.benefit-card {
+    background: linear-gradient(160deg, #5b9bf5 0%, #3a72e8 100%);
+    border-radius: 18px;
+    padding: 28px 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 6px 18px rgba(59, 114, 232, 0.35);
+    flex: 1;
+    max-width: 340px;
+    min-height: 200px;
+}
+
+.benefit-card h3 {
+    font-size: 1.35rem; 
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.benefit-card p {
+    font-size: 1rem; /* antes 0.88rem */
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.92);
+    text-align: left;
+}
