@@ -1,3 +1,14 @@
+@media (max-width: 768px) {
+
+    #suscription-plans {
+        padding: 40px 20px;
+    }
+
+    #plans-title {
+        font-size: 40px;
+    }
+
+    #suscription-cards {
 @media (max-width: 768px) { 
 
     #contact-section {
@@ -23,6 +34,32 @@
         gap: 20px;
     }
 
+    .suscription-card {
+        min-height: 80vh;
+    }
+
+    .suscription-card h3 {
+        font-size: 32px;
+    }
+
+    .suscription-card h1 {
+        font-size: 64px;
+    }
+
+    .suscription-card p {
+        font-size: 24px;
+    }
+
+    .suscription-card li {
+        font-size: 24px;
+    }
+    
+    #last-card {
+        font-size: 48px;
+    }
+    
+    .button a {
+        font-size: 32px;
     .form-group {
         width: 100%;
     }
