@@ -43,6 +43,156 @@
 
     #contact-image {
         display: none;
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 40px 20px;
+        height: 100%;
     }
 
+    #hero-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: 80vh;
+    }
+
+    #hero-content img {
+        z-index: -9999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.2;
+        max-width: 300px;
+    }
+
+    #hero-cta {
+        gap: 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #cta-button, #login-section, #login-button, #login-button a {
+        min-width: 280px;
+    }
+    
+    #cta-button a {
+        font-size: 24px;
+        padding: 16px 28px;
+        border-radius: 20px;
+    }
+
+    #login-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-top: 20px;
+    }
+
+    #login-section p {
+        font-size: 20px;
+        color: #4F555A;
+    }
+    #login-button a {
+        display: block;
+        text-align: center;
+        padding: 16px 32px;
+        border-radius: 20px;
+        font-size: 24px;
+        font-weight: bolder;
+        text-decoration: none;
+        background: radial-gradient(circle, #D9D9D9 0%, #E6E6E6 47%, #FFFFFF 100%);
+        color: #4F555A;
+        transition: all 0.3s ease;
+    }
+}
+/* ── MOBILE BASE (< 768px) ── */
+#functionality {
+    padding: 40px 20px;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    align-self: flex-start;
+}
+
+.benefits-grid {
+    width: 100%;
+    max-width: 400px;
+    gap: 16px;
+}
+
+.benefit-row {
+    flex-direction: column; /* ← cards se apilan verticalmente */
+    align-items: stretch;
+    gap: 16px;
+}
+
+.benefit-icon {
+    display: none; /* ← iconos ocultos en mobile */
+}
+
+.benefit-card {
+    max-width: 100%;
+    min-height: unset;
+    width: 100%;
+}
+
+/* ── TABLET / DESKTOP (≥ 768px) ── */
+@media (min-width: 768px) {
+    .benefits-grid {
+        max-width: 860px;
+    }
+
+    .benefit-row {
+        flex-direction: row; /* ← vuelve al layout horizontal */
+        align-items: center;
+    }
+
+    .benefit-icon {
+        display: inline-block; /* ← iconos visibles de nuevo */
+    }
+
+    .benefit-card {
+        max-width: 340px;
+        min-height: 200px;
+    }
+}
+/* ── US-10: FOOTER MOBILE ── */
+
+footer {
+    padding: 28px 20px;
+}
+
+.footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-contact {
+        text-align: right;
+    }
 }
