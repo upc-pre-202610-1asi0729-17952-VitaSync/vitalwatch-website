@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/styles/desktop_styles.css">
-    <link rel="stylesheet" href="assets/styles/mobile_styles.css">
+    <meta name="author" content="Equipo VitaSync">
+    <meta name="description" content="Plataforma inteligente para el monitoreo, reporte y análisis de la fatiga en clínicas y hospitales. Optimiza la salud laboral y la seguridad del paciente con tecnología avanzada.">
+    <meta name="keywords" content="fatiga, salud laboral, vitalwatch, clínica, hospital, prevención, monitoreo, plataforma, turnos, bienestar, personal médico">
+    <meta name="copyright" content="Copyright Equipo VitaSync 2026" />
+    <title>VitalWatch</title>
+    <link rel="stylesheet" href="./assets/styles/desktop_styles.css">
+    <link rel="stylesheet" href="./assets/styles/mobile_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <!--NAV BAR-->
     </header>
 
     <section id="hero">
+        <div id="hero-content">
 
+            <div id="hero-cta">
+
+                <div id="hero-text">
+                    <h1>
+                        La solución que los médicos necesitan
+                    </h1>
+                </div>
+
+                <div id="hero-description">
+                    <h2>
+                        Mejora el desempeño y el bienestar de
+                        los doctores y enfermeros mediante monitoreo a tiempo real de
+                        sus niveles de fatiga y rendimiento.
+                    </h2>
+                </div>
+
+                <div id="cta-button">
+                    <a href="#suscription-plans">
+                        Solicita una prueba
+                    </a>
+                </div>
+
+                <div id="login-section">
+                    <div>
+                        <p>¿Ya nos tienes?</p>
+                    </div>
+                
+                    <div id="login-button">
+                        <a href="#login">
+                            Ingreso
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="./assets/images/hero_image_desktop.png" alt="Imagen ilustrativa de gestión médica">
+            </div>
+
+        </div>
     </section>
 
     <section id="functionality">
@@ -27,9 +76,33 @@
             </div>
 
             <div id="clinic-benefits">
-
-                <!--US 5-->
-                
+    <h2 class="section-title">Lo que brindamos</h2>
+    <div class="benefits-grid">
+        <div class="benefit-row">
+            <span class="benefit-icon">📈</span>
+            <div class="benefit-card">
+                <h3>Dashboard</h3>
+                <p>Visualiza el estado de fatiga y de desempeño del personal clínico a tiempo real para la toma de decisiones a partir de datos obtenidos de relojes inteligentes</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Notificaciones</h3>
+                <p>Enviamos alertas al personal clínico y administrativo cuando se detectan situaciones de riesgo elevado</p>
+            </div>
+            <span class="benefit-icon">🔔</span>
+        </div>
+        <div class="benefit-row">
+            <span class="benefit-icon">🛡️</span>
+            <div class="benefit-card">
+                <h3>Prevención</h3>
+                <p>Detectamos señales de fatiga antes de que afecten el rendimiento para reducir riesgos en la atención a los pacientes</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Bienestar</h3>
+                <p>Detectamos señales anómalas de salud que no están relacionadas con la fatiga y que podrían requerir revisión</p>
+            </div>
+            <span class="benefit-icon">✅</span>
+        </div>
+    </div>
             </div>
 
         </div>
@@ -115,8 +188,111 @@
         
     </section>
 
-    <footer>
-        <!--SOCIAL MEDIA-->
+    <section id="contact-section">
+
+    <h1>Comunícate con nosotros</h1>
+
+    <div id="contact-container">
+
+        <div id="contact-form-container">
+            <form>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Tu nombre:</label>
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tu correo electrónico:</label>
+                        <input type="email" placeholder="correo@electronico.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Tu número:</label>
+                        <input type="text" placeholder="999888777" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nombre de la clínica:</label>
+                        <input type="text" placeholder="Clinica" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Tu cargo en la clínica:</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Dirección de la clínica:</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Escríbenos:</label>
+                    <textarea></textarea>
+                </div>
+
+                <div id="submit-button">
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div id="contact-image">
+            <img src="./assets/images/contact_image_desktop.png" alt="Imagen ilustrativa de contacto">
+        </div>
+
+    </div>
+    </section>
+
+   <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="VitalWatch logo" class="footer-logo-icon">
+                    <span class="footer-logo-text">VitalWatch</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 0-3.77-2.95C13.9 3.5 12 3.5 12 3.5s-1.9 0-3.82.24A4.83 4.83 0 0 0 4.41 6.69 50.8 50.8 0 0 0 4 12a50.8 50.8 0 0 0 .41 5.31 4.83 4.83 0 0 0 3.77 2.95C10.1 20.5 12 20.5 12 20.5s1.9 0 3.82-.24a4.83 4.83 0 0 0 3.77-2.95A50.8 50.8 0 0 0 20 12a50.8 50.8 0 0 0-.41-5.31zM10 15.5v-7l6 3.5z"/>
+                    </svg>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-center">
+                <a href="#terms-and-conditions" class="footer-link">Términos y condiciones</a>
+                <p class="footer-copy">© 2026 VitalWatch · Todos los derechos reservados</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Escríbenos o llámanos en</h4>
+                <p>vitalwatch@correo.com</p>
+                <p>987 654 321</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="./assets/scripts/main.js" defer></script>
 </body>
 </html>
