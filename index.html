@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,287 +8,482 @@
     <meta name="description" content="Plataforma inteligente para el monitoreo, reporte y análisis de la fatiga en clínicas y hospitales. Optimiza la salud laboral y la seguridad del paciente con tecnología avanzada.">
     <meta name="keywords" content="fatiga, salud laboral, vitalwatch, clínica, hospital, prevención, monitoreo, plataforma, turnos, bienestar, personal médico">
     <meta name="copyright" content="Copyright Equipo VitaSync 2026" />
-    <title>VitalWatch</title>
     <link rel="stylesheet" href="./assets/styles/desktop_styles.css">
     <link rel="stylesheet" href="./assets/styles/mobile_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="module" src="./assets/scripts/main.js" defer></script>
+    <title>VitalWatch</title>
 </head>
 
 <body>
-    <header>
-        <!--NAV BAR-->
+
+    <header>    
+
+        <nav>
+
+            <div id="navbar-top">
+
+                <div id="navbar-logo-container">
+
+                    <img src="./assets/images/logo_desktop.png" alt="Logo de VitalWatch">
+
+                </div>
+
+                <button id="mobile-menu">
+                    ≡
+                </button>    
+
+            </div>
+
+            <div id="navbar-options">
+
+                <button id="btn-en">EN</button>
+                <button id="btn-es">ES</button>
+
+                <a data-i18n="navbar.home" href="#">Inicio</a>
+                <a data-i18n="navbar.functions" href="#functionality">Funciones</a>
+                <a data-i18n="navbar.suscription" href="#suscription-plans">Planes</a>
+                <a data-i18n="navbar.conditions" href="#terms-and-conditions">Términos</a>
+                <a data-i18n="navbar.contact" href="#contact-section">Contáctanos</a>
+                <a id="login" data-i18n="navbar.login" href="#">Ingreso</a>
+
+            </div>
+
+        </nav>
+
     </header>
 
-    <section id="hero">
-        <div id="hero-content">
+    <main>
 
-            <div id="hero-cta">
+        <section id="hero">
 
-                <div id="hero-text">
-                    <h1>
-                        La solución que los médicos necesitan
-                    </h1>
+            <div id="hero-content">
+
+                <div id="hero-cta">
+
+                    <div id="hero-text">
+
+                        <h1 data-i18n="hero.title">
+                            La solución que los médicos necesitan
+                        </h1>
+
+                    </div>
+
+                    <div id="hero-description">
+
+                        <h2 data-i18n="hero.description">
+                            Mejora el desempeño y el bienestar de
+                            los doctores y enfermeros mediante monitoreo a tiempo real de
+                            sus niveles de fatiga y rendimiento
+                        </h2>
+
+                    </div>
+
+                    <a id="hero-cta-button" data-i18n="hero.cta" href="#suscription-plans">Solicita una prueba</a>
+
+                    <div id="login-section">
+
+                        <div>
+
+                            <p data-i18n="login.question">¿Ya nos tienes?</p>
+
+                        </div>
+
+                        <div id="login-button">
+
+                            <a data-i18n="login.cta" href="#login">Ingreso</a>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div id="hero-description">
-                    <h2>
-                        Mejora el desempeño y el bienestar de
-                        los doctores y enfermeros mediante monitoreo a tiempo real de
-                        sus niveles de fatiga y rendimiento.
-                    </h2>
+                <div id="hero-image-container">
+
+                    <img src="./assets/images/hero_image_desktop.png" alt="Imagen ilustrativa de gestión médica">
+
                 </div>
 
-                <div id="cta-button">
-                    <a href="#suscription-plans">
-                        Solicita una prueba
+            </div>
+
+        </section>
+
+        <section id="functionality">
+
+                <div id="benefits">
+
+                    <h2 data-i18n="functionality.title" class="section-title">Lo que brindamos</h2>
+
+                    <div class="benefits-grid">
+
+                        <div class="benefit-row">
+
+                            <span class="card-icon">📈</span>
+
+                            <div class="card benefit">
+
+                                <span class="card-icon-mobile">📈</span>
+                                <h3 data-i18n="functionality.dashboard.title">Dashboard</h3>
+                                <hr>
+                                <p data-i18n="functionality.dashboard.description">Visualiza el estado de fatiga y de desempeño del personal clínico a tiempo real para la toma de decisiones a partir de datos obtenidos de relojes inteligentes</p>
+                            
+                            </div>
+                        
+                            <div class="card benefit">
+
+                                <span class="card-icon-mobile">🔔</span>
+                                <h3 data-i18n="functionality.notifications.title">Notificaciones</h3>
+                                <hr>
+                                <p data-i18n="functionality.notifications.description">Enviamos alertas al personal clínico y administrativo cuando se detectan situaciones de riesgo elevado</p>
+                            
+                            </div>
+
+                            <span class="card-icon">🔔</span>
+
+                        </div>
+
+                        <div class="benefit-row">
+
+                            <span class="card-icon">🛡️</span>
+
+                            <div class="card benefit">
+
+                                <span class="card-icon-mobile">🛡️</span>
+                                <h3 data-i18n="functionality.prevention.title">Prevención</h3>
+                                <hr>
+                                <p data-i18n="functionality.prevention.description">Detectamos señales de fatiga antes de que afecten el rendimiento para reducir riesgos en la atención a los pacientes</p>
+                            
+                            </div>
+
+                            <div class="card benefit">
+
+                                <span class="card-icon-mobile">✅</span>
+                                <h3 data-i18n="functionality.wellbeing.title">Bienestar</h3>
+                                <hr>
+                                <p data-i18n="functionality.wellbeing.description">Detectamos señales anómalas de salud que no están relacionadas con la fatiga y que podrían requerir revisión</p>
+                            
+                            </div>
+
+                            <span class="card-icon">✅</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+        <section id="suscription-plans">
+
+            <h2 data-i18n="plans.title" id="plans-title">Elige el plan ideal</h2>
+
+            <div id="suscription-cards">
+
+                <div class="suscription-card">
+
+                    <h3 data-i18n="plans.basic.title">Plan inicial</h3>
+
+                    <hr>
+
+                    <h1>S/.14.99</h1>
+
+                    <p data-i18n="plans.basic.price">al mes por usuario</p>
+
+                    <ul>
+                        <li data-i18n="plans.basic.feature1">Dashboard</li>
+                        <li data-i18n="plans.basic.feature2">Puntaje de fatiga</li>
+                        <li data-i18n="plans.basic.feature3">Envío de alertas importantes</li>
+                        <li data-i18n="plans.basic.feature4">Soporte técnico en menos de 12 horas</li>
+                        <li data-i18n="plans.basic.feature5">Historial básico de datos</li>
+                        <li data-i18n="plans.basic.feature6">Límite de 15 usuarios</li>
+                    </ul>
+
+                    <a data-i18n="plans.basic.cta" href="#">Probar 7 días gratis</a>
+
+                </div>
+
+                <div class="suscription-card">
+
+                    <h3 data-i18n="plans.pro.title">Plan pro</h3>
+
+                    <hr>
+
+                    <h1>S/.24.99</h1>
+                    <p data-i18n="plans.pro.price">al mes por usuario</p>
+
+                    <ul>
+                        <li data-i18n="plans.pro.feature1">Todo lo del plan inicial</li>
+                        <li data-i18n="plans.pro.feature2">Dashboard avanzado</li>
+                        <li data-i18n="plans.pro.feature3">Reportes detallados</li>
+                        <li data-i18n="plans.pro.feature4">Alertas en tiempo real</li>
+                        <li data-i18n="plans.pro.feature5">Detección de anomalías</li>
+                        <li data-i18n="plans.pro.feature6">Historial completo</li>
+                        <li data-i18n="plans.pro.feature7">Soporte prioritario</li>
+                        <li data-i18n="plans.pro.feature8">Límite de 30 usuarios</li>
+                    </ul>
+
+                    <a data-i18n="plans.pro.cta" href="#">Comenzar ahora</a>
+
+                </div>
+
+                <div class="suscription-card">
+
+                    <h3 data-i18n="plans.custom.title">Plan personalizado</h3>
+
+                    <hr>
+
+                    <h1 data-i18n="plans.custom.contact" id="last-card">Consúltanos</h1>
+
+                    <ul>
+                        <li data-i18n="plans.custom.feature1">Todo lo del plan pro</li>
+                        <li data-i18n="plans.custom.feature2">Funcionalidades ajustables</li>
+                        <li data-i18n="plans.custom.feature3">Límite de usuarios personalizado</li>
+                        <li data-i18n="plans.custom.feature4">Integraciones exclusivas</li>
+                    </ul>
+
+                    <a data-i18n="plans.custom.cta" href="#">Más información</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="terms-and-conditions">
+
+                <div id="terms">
+
+                    <h2 data-i18n="terms.title" class="section-title">La confianza es importante</h2>
+
+                    <div class="terms-grid">
+
+                        <div class="terms-row">
+
+                            <span class="card-icon">🔒</span>
+
+                            <div class="card terms">
+
+                                <span class="card-icon-mobile">🔒</span>
+                                
+                                <h3 data-i18n="terms.private.title">Datos privados</h3>
+
+                                <hr>
+
+                                <p data-i18n="terms.private.description">
+                                    La información de cada clínica y de su personal es 
+                                    completamente privada y no se comparte con terceros 
+                                    sin autorización
+                                </p>
+                            
+                            </div>
+                        
+                            <div class="card terms">
+
+                                <span class="card-icon-mobile">🔎</span>
+                                
+                                <h3 data-i18n="terms.transparency.title">Transparencia</h3>
+                                
+                                <hr>
+
+                                <p data-i18n="terms.transparency.description">
+                                    Toda la información sobre VitalWatch se presenta de forma clara 
+                                    y sencilla para que todos entiendan cómo funciona
+                                </p>
+                            
+                            </div>
+
+                            <span class="card-icon">🔎</span>
+
+                        </div>
+
+                        <div class="terms-row">
+
+                            <span class="card-icon">💵</span>
+
+                            <div class="card terms">
+
+                                <span class="card-icon-mobile">💵</span>
+                                
+                                <h3 data-i18n="terms.refunds.title">Reembolsos</h3>
+                               
+                                <hr>
+
+                                <p data-i18n="terms.refunds.description">
+                                    El reembolso solo aplica si la suscripción se cancela 
+                                    dentro de los primeros 5 días de uso
+                                </p>
+                            
+                            </div>
+
+                            <div class="card terms">
+
+                                <span class="card-icon-mobile">🛠️</span>
+                                
+                                <h3 data-i18n="terms.support.title">Soporte</h3>
+                                
+                                <hr>
+
+                                <p data-i18n="terms.support.description">
+                                    El soporte técnico por correo electrónico tiene un 
+                                    tiempo de respuesta de menos de 12 horas
+                                </p>
+                            
+                            </div>
+
+                            <span class="card-icon">🛠️</span>
+
+                        </div>
+
+                    </div>
+
+                </div>  
+
+        </section>
+
+        <section id="contact-section">
+
+            <h2 data-i18n="contact.title">Comunícate con nosotros</h2>
+
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+
+                    <form>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label data-i18n="contact.form.name">Tu nombre:</label>
+                                <input type="text" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label data-i18n="contact.form.email">Tu correo electrónico:</label>
+                                <input type="email" placeholder="email@domain.com" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label data-i18n="contact.form.phone">Tu número:</label>
+                                <input type="text" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label data-i18n="contact.form.clinic">Nombre de la clínica:</label>
+                                <input type="text" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label data-i18n="contact.form.role">Tu cargo en la clínica:</label>
+                                <input type="text">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label data-i18n="contact.form.address">Dirección de la clínica:</label>
+                                <input type="text">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label data-i18n="contact.form.message">Escríbenos:</label>
+                            <textarea></textarea>
+
+                        </div>
+
+                        <div id="submit-button">
+
+                            <button data-i18n="contact.form.submit" type="submit">Enviar</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div id="contact-image">
+
+                    <img src="./assets/images/contact_image_desktop.png" alt="Imagen ilustrativa de contacto">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div id="footer-top">
+
+            <div id="vitalwatch-social-media">
+
+                <img src="./assets/images/logo.png" alt="Logo de Vitalwatch">
+
+                <div id="social-media-icons">
+
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
                     </a>
-                </div>
 
-                <div id="login-section">
-                    <div>
-                        <p>¿Ya nos tienes?</p>
-                    </div>
-                
-                    <div id="login-button">
-                        <a href="#login">
-                            Ingreso
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div>
-                <img src="./assets/images/hero_image_desktop.png" alt="Imagen ilustrativa de gestión médica">
-            </div>
-
-        </div>
-    </section>
-
-    <section id="functionality">
-
-        <div class="cards-container">
-
-            <div id="administrative-benefits">
-
-                <!--US 4-->
-
-            </div>
-
-            <div id="clinic-benefits">
-    <h2 class="section-title">Lo que brindamos</h2>
-    <div class="benefits-grid">
-        <div class="benefit-row">
-            <span class="benefit-icon">📈</span>
-            <div class="benefit-card">
-                <h3>Dashboard</h3>
-                <p>Visualiza el estado de fatiga y de desempeño del personal clínico a tiempo real para la toma de decisiones a partir de datos obtenidos de relojes inteligentes</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Notificaciones</h3>
-                <p>Enviamos alertas al personal clínico y administrativo cuando se detectan situaciones de riesgo elevado</p>
-            </div>
-            <span class="benefit-icon">🔔</span>
-        </div>
-        <div class="benefit-row">
-            <span class="benefit-icon">🛡️</span>
-            <div class="benefit-card">
-                <h3>Prevención</h3>
-                <p>Detectamos señales de fatiga antes de que afecten el rendimiento para reducir riesgos en la atención a los pacientes</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Bienestar</h3>
-                <p>Detectamos señales anómalas de salud que no están relacionadas con la fatiga y que podrían requerir revisión</p>
-            </div>
-            <span class="benefit-icon">✅</span>
-        </div>
-    </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="suscription-plans">
-
-    <h2 id="plans-title">Elige el plan ideal</h2>
-
-    <div id="suscription-cards">
-
-        <div class="suscription-card">
-            <h3>Plan inicial</h3>
-            <hr>
-
-            <h1>S/.14.99</h1>
-            <p>al mes por usuario</p>
-
-            <ul>
-                <li>Dashboard</li>
-                <li>Puntaje de fatiga</li>
-                <li>Envío de alertas importantes</li>
-                <li>Soporte técnico en menos de 12 horas</li>
-                <li>Historial básico de datos</li>
-                <li>Límite de 15 usuarios</li>
-            </ul>
-
-            <div class="button">
-                <a href="#">Probar 7 días gratis</a>
-            </div>
-        </div>
-
-        <div class="suscription-card">
-            <h3>Plan pro</h3>
-            <hr>
-
-            <h1>S/.24.99</h1>
-            <p>al mes por usuario</p>
-
-            <ul>
-                <li>Todo lo del plan inicial</li>
-                <li>Dashboard avanzado</li>
-                <li>Reportes detallados</li>
-                <li>Alertas en tiempo real</li>
-                <li>Detección de anomalías</li>
-                <li>Historial completo</li>
-                <li>Soporte prioritario</li>
-                <li>Límite de 30 usuarios</li>
-            </ul>
-
-            <div class="button">
-                <a href="#">Comenzar ahora</a>
-            </div>
-        </div>
-
-        <div class="suscription-card">
-            <h3>Plan personalizado</h3>
-            <hr>
-
-            <h1 id="last-card">Consúltanos</h1>
-
-            <ul>
-                <li>Todo lo del plan pro</li>
-                <li>Funcionalidades ajustables</li>
-                <li>Límite de usuarios personalizado</li>
-                <li>Integraciones exclusivas</li>
-            </ul>
-
-            <div class="button">
-                <a href="#">Más información</a>
-            </div>
-        </div>
-
-    </div>
-    </section>
-
-    <section id="terms-and-conditions">
-        
-    </section>
-
-    <section id="contact-section">
-
-    <h1>Comunícate con nosotros</h1>
-
-    <div id="contact-container">
-
-        <div id="contact-form-container">
-            <form>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Tu nombre:</label>
-                        <input type="text" placeholder="Nombre" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Tu correo electrónico:</label>
-                        <input type="email" placeholder="correo@electronico.com" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Tu número:</label>
-                        <input type="text" placeholder="999888777" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Nombre de la clínica:</label>
-                        <input type="text" placeholder="Clinica" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Tu cargo en la clínica:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Dirección de la clínica:</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Escríbenos:</label>
-                    <textarea></textarea>
-                </div>
-
-                <div id="submit-button">
-                    <button type="submit">Enviar</button>
-                </div>
-
-            </form>
-        </div>
-
-        <div id="contact-image">
-            <img src="./assets/images/contact_image_desktop.png" alt="Imagen ilustrativa de contacto">
-        </div>
-
-    </div>
-    </section>
-
-   <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="VitalWatch logo" class="footer-logo-icon">
-                    <span class="footer-logo-text">VitalWatch</span>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="YouTube">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                        <path d="M19.59 6.69a4.83 4.83 0 0 0-3.77-2.95C13.9 3.5 12 3.5 12 3.5s-1.9 0-3.82.24A4.83 4.83 0 0 0 4.41 6.69 50.8 50.8 0 0 0 4 12a50.8 50.8 0 0 0 .41 5.31 4.83 4.83 0 0 0 3.77 2.95C10.1 20.5 12 20.5 12 20.5s1.9 0 3.82-.24a4.83 4.83 0 0 0 3.77-2.95A50.8 50.8 0 0 0 20 12a50.8 50.8 0 0 0-.41-5.31zM10 15.5v-7l6 3.5z"/>
-                    </svg>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
 
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
-                        <circle cx="4" cy="4" r="2"/>
-                    </svg>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                    </svg>
-                    </a>
+
                 </div>
-            </div>
 
-            <div class="footer-center">
-                <a href="#terms-and-conditions" class="footer-link">Términos y condiciones</a>
-                <p class="footer-copy">© 2026 VitalWatch · Todos los derechos reservados</p>
             </div>
+            
+            <div id="terms-conditions">
+                <h3 data-i18n="footer.terms">Términos y condiciones</h3>
+            </div>
+            
+            <div id="vitalwatch-direct-contact">
 
-            <div class="footer-contact">
-                <h4>Escríbenos o llámanos en</h4>
+                <h3 data-i18n="contact.cta">Escribenos o llámanos</h3>
                 <p>vitalwatch@correo.com</p>
                 <p>987 654 321</p>
+
             </div>
+            
         </div>
+
+        <div id="footer-bottom">
+
+            <h4 data-i18n="copyright">&copy; 2026 VitalWatch - Todos los derechos reservados </h4>
+
+        </div>  
+
     </footer>
 
-    <script src="./assets/scripts/main.js" defer></script>
 </body>
+
 </html>

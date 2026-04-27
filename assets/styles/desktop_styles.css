@@ -1,22 +1,131 @@
-/* RESET */
+/*=== Global Styles ===*/
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
 }
 
 body {
     background-color: #F3F3FD;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-/* ───── HERO ───── */
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #506CF8;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: lighter;
+    color: #4F555A;
+}
+
+textarea {
+    resize: none;
+}
+
+/*=== Global Styles ===*/
+
+
+/*===Header styles===*/
+
+header {      
+    width: 100%;
+    max-height: 121px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: #65A8FB66;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px 16px 48px;
+    gap: 32px;
+}
+
+#menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#navbar-logo-container img {
+    max-height: 90px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#navbar-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center; 
+    gap: 48px;
+}
+
+#navbar-options button {
+    padding: 8px 16px;
+    border-style: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #F3F3FD;
+    background-color: #506CF8;
+    transition: all 0.4s;
+}
+
+#navbar-options button:hover {
+    scale: 110%;
+    color: #506CF8;
+    background-color: #F3F3FD;
+}
+
+#navbar-options button:active {
+    scale: 90%;
+}   
+
+#navbar-options a {
+    text-decoration: none;
+    color: #506CF8;
+    transition: all 0.4s;
+}
+
+#navbar-options a:hover {
+    scale: 120%;
+}
+
+#navbar-options a:active {
+    scale: 100%;
+    color: #FFFFFF;
+}
+
+#login {
+    font-weight: bolder;
+}
+
+/*===Header styles===*/
+
+
+/*=== Hero Section ===*/
 
 #hero {
-    padding: 80px 120px;
+    padding: 120px 120px;
 }
 
 #hero-content {
@@ -32,36 +141,31 @@ body {
     align-items: center;
     gap: 50px;
     max-width: 600px;
+    font-weight: bold;
 }
 
 #hero-text, #hero-description {
     text-align: center;
 }
 
-h1 {
-    font-size: 64px;
-    font-weight: bold;
-    color: #506CF8;
-}
-
-h2 {
-    font-size: 22px;
-    color: #4F555A;
-}
-
-#cta-button a {
+#hero-cta a {
     padding: 18px 32px;
     border-radius: 12px;
     font-size: 20px;
     text-decoration: none;
     background: radial-gradient(circle, #3D93FF 0%, #506CF8 100%);
     color: #D9D9D9;
-    transition: 0.3s;
+    transition: all 0.4s;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 
-#cta-button a:hover {
-    background: radial-gradient(circle, #506CF8 0%, #3D93FF 100%);
+#hero-cta a:hover {
+    transform: scale(1.06);
+    color: #FFFFFF;
+}
+
+#hero-cta a:active {
+    transform: scale(1.00);
     color: #FFFFFF;
 }
 
@@ -74,50 +178,75 @@ h2 {
     width: 100%;
 }
 
-/* ───── FUNCTIONALITY ───── */
+/*=== Hero Section ===*/
+
+
+/*=== Functionality Section ===*/
 
 #functionality {
-    padding: 60px 80px;
-    background-color: #e8ecf5;
+    padding: 60px 60px;
 }
 
 .section-title {
     font-size: 48px;
     font-weight: bold;
-    color: #2563eb;
+    color: #506CF8;
     margin-bottom: 40px;
 }
 
 .benefits-grid {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 32px;
 }
 
 .benefit-row {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 32px;
 }
 
-.benefit-card {
-    background: linear-gradient(160deg, #5b9bf5, #3a72e8);
-    border-radius: 18px;
-    padding: 28px;
-    color: white;
-    flex: 1;
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(180deg, #65A8FB, #1678F2);
+    border-radius: 24px;
+    min-height: 250px;
+    padding: 32px;
+    gap: 16px;
+    color: #D9D9D9;
     max-width: 340px;
+    transition: all 0.3s;
 }
 
-.benefit-card h3 {
+.card:hover {
+    transform: scale(1.04);
+    color:#FFFFFF;
+}
+
+.card-icon-mobile {
+    display: none;
+}
+
+.card h3 {
+    font-size: 32px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* ───── PRICING ───── */
+.card-icon {
+    font-size: 96px;
+}
+
+/*=== Functionality Section ===*/
+
+
+/*=== Suscription Plans Section ===*/
 
 #suscription-plans {
-    padding: 80px 120px;
+    padding: 60px 60px;
 }
 
 #plans-title {
@@ -129,57 +258,125 @@ h2 {
 
 #suscription-cards {
     display: flex;
-    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 }
 
 .suscription-card {
-    flex: 1;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 32px;
+    border-radius: 24px;
+    min-width: 400px;
+    min-height: 500px;
     background: radial-gradient(circle, #8A8585, #4F555A);
     color: #D9D9D9;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 8px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    transition: all 0.4s ease;
+}
+
+.suscription-card:hover {
+    transform: scale(1.05);
+    color:#FFFFFF;
 }
 
 .suscription-card h3 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    text-align: center;
 }
 
 .suscription-card h1 {
-    font-size: 40px;
+    font-size: 48px;
+    text-align: center;
+    color: #D9D9D9;
 }
 
 .suscription-card p {
+    margin-top: -8px;
     font-size: 14px;
-    margin-top: -10px;
+    text-align: center;
+}
+
+.suscription-card ul {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-left: 16px;
+    gap: 4px;
 }
 
 .suscription-card li {
     font-size: 16px;
 }
 
-.button {
+.suscription-card a {
+    text-align: center;
     margin-top: auto;
-}
-
-.button a {
-    padding: 14px 24px;
-    border-radius: 12px;
     background: linear-gradient(90deg, #506CF8, #65A8FB);
-    color: white;
+    color: #D9D9D9;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
+    padding: 16px;
+    border-radius: 16px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    transition: all 0.3s;
 }
 
-/* ───── CONTACT ───── */
+.suscription-card a:hover {
+    transform: scale(1.07);
+    color:#FFFFFF;
+}
+
+.suscription-card a:active {
+    transform: scale(0.95);
+}
+
+/*=== Suscription Plans Section ===*/
+
+
+/*=== Terms and Conditions Section ===*/
+
+#terms-and-conditions {
+    padding: 60px 60px;
+}
+
+#terms {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.terms-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+/*=== Terms and Conditions Section ===*/
+
+
+/*=== Contact Section ===*/
 
 #contact-section {
-    padding: 80px 120px;
+    padding: 32px 60px;
+}
+
+#contact-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #506CF8;
 }
 
 #contact-section h1 {
@@ -189,13 +386,24 @@ h2 {
 
 #contact-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
+    padding: 24px;
 }
 
 #contact-form-container {
-    padding: 60px;
+    padding: 16px;
     border-radius: 30px;
-    background: radial-gradient(circle, #3D93FF, #1678F2);
+    background: radial-gradient(#3D93FF 0%, #1678F2 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    color: #D9D9D9;
 }
 
 .form-row {
@@ -204,41 +412,138 @@ h2 {
 }
 
 .form-group {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-input, textarea {
+.form-group input, .form-group textarea {
+    min-width: 230px;
     border-radius: 30px;
     padding: 16px;
     background: #D9D9D9;
+    border-style: none;
 }
 
-textarea {
+.form-group textarea {
     resize: none;
-    height: 160px;
+    min-height: 160px;
 }
 
-button {
+#submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-button button {
+    min-width: 60%;
     background: #65A8FB;
     border-radius: 30px;
     padding: 14px 40px;
+    font-size: 16px;
+    font-weight: bold;
     border: none;
     color: white;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
-/* ───── FOOTER ───── */
+#submit-button button:hover {
+    transform: scale(1.05);
+}
+
+#contact-image {
+    padding: 48px;
+}
+
+#contact-image img {
+    width: 100%;
+    height: auto;
+    max-width: 610px;
+    min-width: 400px;
+}
+
+
+/*=== Contact Section ===*/
+
+
+/*=== Footer Section ===*/
 
 footer {
     margin-top: auto;
-    background: #2563eb;
-    padding: 28px 60px;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    background: linear-gradient(#65A8FB 40%, #1678F2 100%);
+    color: #FFFFFF;
+}   
+
+#footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-align: center;
+    width: 100%;
+}
+
+#footer-top h3 {
+    font-size: 24px;
+}
+
+#terms-conditions {
+    padding-left: 24px;
+}
+
+#vitalwatch-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 225px;
+    gap: 16px;
+}
+
+#social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+#social-media-icons i {
+    font-size: 32px;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+#social-media-icons i:hover {
+    color: #1678F2;
+}
+
+#footer-bottom {
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-bottom h4 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#vitalwatch-social-media img {
+    max-width: 64px;
+}
+
+#vitalwatch-direct-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
 }
+
+/*=== Footer Section ===*/
