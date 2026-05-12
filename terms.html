@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalWatch | Monitoreo Inteligente para Atención Segura</title>
+    <meta name="description" content="Plataforma de VitaSync para el monitoreo de fatiga del personal médico, prevención de riesgo clínico y continuidad operacional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!-- Header & Navigation -->
+<header class="header scrolled" id="header">
+    <div class="container header-container">
+        <div class="logo">
+            <img src="assets/images/banner.png" alt="VitalWatch Logo" class="logo-img">
+            <!-- Fallback text si no carga la imagen -->
+            <span class="logo-text">VitalWatch</span>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#funcionalidades" class="nav-link" data-i18n="nav.features">Funcionalidades</a></li>
+                <li><a href="#beneficios" class="nav-link" data-i18n="nav.benefits">Beneficios</a></li>
+                <li><a href="#planes" class="nav-link" data-i18n="nav.plans">Planes</a></li>
+                <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+                <li><a href="#terminos" class="nav-link" data-i18n="nav.terms">Términos</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-selector">
+                    <span class="lang active">ES</span> <span class="separator">|</span> <span class="lang">EN</span>
+                </div>
+                <!-- TODO: Reemplazar "https://app.tudominio.com/login" por la URL real de tu Web App -->
+                <a href="https://app.tudominio.com/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-login" data-i18n="nav.login">Acceder</a>
+            </div>
+        </nav>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</header>
+<main>
+    <!-- TERMS HERO SECTION -->
+    <section id="terms-page" class="section terms-page-section">
+        <div class="container terms-page-container">
+
+            <div class="terms-page-header">
+            <span class="terms-page-badge" data-i18n="termsPage.badge">Documento Legal</span>
+
+                <h1 class="terms-page-title" data-i18n="termsPage.title">Términos y Condiciones de Uso</h1>
+
+                <p class="terms-page-subtitle" data-i18n="termsPage.subtitle">Conozca las condiciones legales, éticas y de privacidad relacionadas con el uso de la plataforma VitalWatch.</p>
+
+                <div class="terms-page-meta">
+                <span data-i18n="termsPage.version">Versión: 1.0</span>
+
+                    <span class="dot">•</span>
+
+                    <span data-i18n="termsPage.date">Fecha de vigencia: Mayo 2026</span>
+                </div>
+            </div>
+
+            <div class="terms-page-content">
+
+                <!-- 1 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s1.title">1. Aceptación de los Términos</h2>
+
+                    <p data-i18n="termsPage.s1.p1">Al acceder y utilizar la plataforma web <strong>VitalWatch</strong>, desarrollada por el equipo de la startup <strong>VitaSync</strong> en el marco del curso <em>1ASI0729 – Desarrollo de Aplicaciones Open Source</em> de la Universidad Peruana de Ciencias Aplicadas (UPC), el usuario declara haber leído, comprendido y aceptado íntegramente los presentes Términos y Condiciones de Uso. Si no está de acuerdo con alguno de estos términos, le solicitamos abstenerse de utilizar el servicio.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s2.title">2. Descripción del Servicio</h2>
+
+                    <p data-i18n="termsPage.s2.p1"><strong>VitalWatch</strong> es una plataforma web de tipo SaaS (Software as a Service) orientada al monitoreo preventivo del nivel de fatiga del personal médico y clínico en hospitales y clínicas. La plataforma analiza datos biométricos y de carga laboral —incluyendo horas de sueño, frecuencia cardíaca, actividad física y turnos de trabajo— con el fin de calcular un puntaje de fatiga (<em>Fatigue Score</em>) y emitir alertas preventivas que apoyen la toma de decisiones del personal administrativo y clínico.</p>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s2.l1"><br><strong>Personal administrativo</strong>: directores, administradores, jefes de área y supervisores de turnos en instituciones de salud.</li>
+
+                        <li data-i18n="termsPage.s2.l2"><strong>Personal clínico</strong>: médicos, enfermeros y demás trabajadores de la salud en funciones asistenciales.</li>
+                    </ul>
+
+                    <div class="terms-warning">
+                        <strong data-i18n="termsPage.s2.warningTitle"><strong>Aviso importante</strong>:</strong>
+
+                        <span data-i18n="termsPage.s2.warningText">VitalWatch es un prototipo académico desarrollado con fines educativos y de investigación. No constituye un dispositivo médico certificado ni reemplaza el juicio clínico profesional. Las alertas generadas son de carácter preventivo y orientativo, y no deben interpretarse como diagnósticos médicos.</span>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s3.title">3. Registro y Acceso al Sistema</h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s3.l1">El acceso a <strong>VitalWatch</strong> requiere el registro de una cuenta institucional mediante credenciales asignadas por el administrador de la institución de salud suscrita al servicio.</li>
+                        <li data-i18n="termsPage.s3.l2">Cada usuario es responsable de mantener la confidencialidad de sus credenciales de acceso. El equipo de <strong>VitaSync</strong> no se hace responsable por el uso no autorizado que derive de la negligencia del usuario en el resguardo de sus datos de acceso.</li>
+                        <li data-i18n="termsPage.s3.l3">Cada cuenta queda vinculada a una persona natural dentro de la institución. Está prohibida la cesión, el préstamo o el uso compartido de credenciales entre usuarios.</li>
+                        <li data-i18n="termsPage.s3.l4">La institución suscrita es responsable de gestionar correctamente los roles y permisos de acceso de su personal dentro de la plataforma.</li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s4.title">4. Condiciones de Uso Aceptable</h2>
+
+                    <p data-i18n="termsPage.s4.p1">El usuario se compromete a utilizar <strong>VitalWatch</strong> exclusivamente para los fines legítimos de monitoreo y prevención de fatiga laboral en entornos de salud para los cuales fue diseñado.</p>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s4.l1">Usar la plataforma con fines de vigilancia o control discriminatorio del personal.</li>
+                        <li data-i18n="termsPage.s4.l2">Compartir, distribuir o publicar los datos individuales de fatiga sin el consentimiento expreso del titular.</li>
+                        <li data-i18n="termsPage.s4.l3">Intentar acceder a datos de otros usuarios, instituciones o módulos sin autorización.</li>
+                        <li data-i18n="termsPage.s4.l4">Realizar ingeniería inversa, descompilar o modificar el software sin autorización del equipo de <strong>VitaSync</strong>.</li>
+                        <li data-i18n="termsPage.s4.l5">Utilizar la plataforma para actividades contrarias a la ética profesional, la ley o los derechos fundamentales de las personas.</li>
+                    </ul>
+
+                    <p data-i18n="termsPage.s4.p2">El uso de la plataforma implica el compromiso de respetar la dignidad, privacidad y bienestar del personal de salud cuyos datos son monitoreados.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s5.title">5. Privacidad y Tratamiento de Datos Biométricos</h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s5.l1"><strong>VitalWatch</strong> trata datos sensibles de carácter biométrico y laboral. El equipo de <strong>VitaSync</strong> se compromete a manejar dicha información con el más alto estándar de responsabilidad, confidencialidad y respeto a la privacidad de las personas.</li>
+                        <li data-i18n="termsPage.s5.l2">Los datos recopilados son utilizados exclusivamente para el cálculo del puntaje de fatiga y la generación de alertas preventivas. No serán vendidos, cedidos ni compartidos con terceros sin el consentimiento expreso del usuario o de la institución suscrita, salvo obligación legal.</li>
+                        <li data-i18n="termsPage.s5.l3">Los datos almacenados son accesibles únicamente por el personal autorizado de la institución y por el equipo técnico de <strong>VitaSync</strong> cuando sea estrictamente necesario para el soporte del servicio.</li>
+                        <li data-i18n="termsPage.s5.l4">La institución suscrita actúa como responsable del tratamiento de los datos de su personal, y el equipo de <strong>VitaSync</strong> como encargado del tratamiento. Ambas partes asumen la responsabilidad correspondiente según los roles establecidos.</li>
+                        <li data-i18n="termsPage.s5.l5">En concordancia con los principios éticos que rigen este proyecto, el equipo de <strong>VitaSync</strong> no utilizará los datos recopilados para investigación académica adicional sin previa notificación y consentimiento de la institución involucrada.</li>
+                    </ul>
+                </div>
+
+                <!-- 6 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s6.title">6. Responsabilidad Ética y Profesional</h2>
+
+                    <p data-i18n="termsPage.s6.p1">El equipo de <strong>VitaSync</strong> asume el compromiso de desarrollar y mantener <strong>VitalWatch</strong> bajo los principios del <strong>Código de Ética de la Ingeniería de Software de ACM/IEEE</strong> y las directrices del <strong>Código de Ética del Colegio de Ingenieros del Perú (CIP)</strong>. A continuación se detalla cómo se aplican dichos principios al desarrollo y operación del producto:</p>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s6.sb1.title">6.1 Principio de Interés Público</h3>
+                        <p data-i18n="termsPage.s6.sb1.desc"><strong>VitalWatch</strong> ha sido concebido para contribuir al bienestar colectivo: proteger la salud del personal médico y, por extensión, garantizar una atención de mayor calidad y seguridad para los pacientes. Toda decisión de diseño prioriza el impacto positivo en la sociedad por encima de intereses particulares.</p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s6.sb2.title">6.2 Principio de Calidad del Producto</h3>
+                        <p data-i18n="termsPage.s6.sb2.desc">El equipo se compromete a aplicar buenas prácticas de ingeniería de software durante todo el ciclo de vida del producto: levantamiento de requerimientos, diseño orientado a dominio (DDD), implementación limpia, pruebas y despliegue. Se emplean convenciones de código documentadas y herramientas estándar de la industria para garantizar un producto confiable y mantenible.</p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s6.sb3.title">6.3 Principio de Juicio Profesional</h3>
+                        <p data-i18n="termsPage.s6.sb3.desc">Los miembros del equipo se comprometen a no distorsionar ni omitir información relevante sobre las capacidades, limitaciones o riesgos del sistema. <strong>VitalWatch</strong> es presentado con total transparencia en cuanto a su naturaleza académica y sus restricciones técnicas actuales.</p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s6.sb4.title">6.4 Principio de Gestión Ética</h3>
+                        <p data-i18n="termsPage.s6.sb4.desc">El desarrollo del proyecto sigue una metodología estructurada que incorpora planificación de sprints, revisiones continuas y distribución equitativa de responsabilidades entre los integrantes del equipo. El proceso busca promover un entorno colaborativo, justo y técnicamente riguroso.</p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s6.sb5.title">6.5 Principio de Honestidad y Transparencia</h3>
+                        <p data-i18n="termsPage.s6.sb5.desc">El equipo se compromete a comunicar con veracidad el estado del producto, sus alcances y sus limitaciones a los usuarios, docentes y cualquier parte interesada. No se harán afirmaciones falsas sobre las capacidades del sistema.</p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s6.sb6.title">6.6 Principio de Respeto a los Colegas</h3>
+                        <p data-i18n="termsPage.s6.sb6.desc">El trabajo en equipo se rige por relaciones de respeto mutuo, reconocimiento de contribuciones individuales y comunicación abierta. Se fomenta la colaboración activa mediante herramientas como WhatsApp, Discord y Google Meet para garantizar la participación equitativa de todos los integrantes.</p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s7.title">7. Transparencia en el Proceso de Desarrollo</h2>
+
+                    <p data-i18n="termsPage.s7.p1">El equipo de <strong>VitaSync</strong> desarrolla <strong>VitalWatch</strong> bajo un proceso de ingeniería de software documentado y trazable, en coherencia con el principio de transparencia profesional exigido por los estándares ACM/IEEE y el CIP.</p>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s7.sb1.title">7.1 Control de Versiones con GitHub</h3>
+
+                        <p data-i18n="termsPage.s7.sb1.desc">Todo el código fuente del proyecto, incluyendo el reporte del informe, la Landing Page y las aplicaciones web, es gestionado mediante <strong>control de versiones Git</strong> a través de la organización en GitHub:</p>
+
+                        <ul class="terms-list">
+                            <li>
+                                <strong data-i18n="termsPage.s7.sb1.repo1">Organización GitHub: https://github.com/upc-pre-202610-1asi0729-17952-VitaSync</strong>
+                            </li>
+
+                            <li>
+                                <strong data-i18n="termsPage.s7.sb1.repo2">Repositorio del Informe: https://github.com/upc-pre-202610-1asi0729-17952-VitaSync/vitalwatch-report</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s7.sb2.title">7.2 Metodología de Trabajo</h3>
+                        <p data-i18n="termsPage.s7.sb2.desc">El equipo sigue una metodología ágil basada en sprints, con backlog definido, planificación de sprints, revisiones periódicas y retrospectivas. Cada entrega está documentada en el informe del proyecto e incluye evidencia de ejecución, despliegue y colaboración en equipo.</p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="termsPage.s7.sb3.title">7.3 Evidencia del Proceso</h3>
+
+                        <ul class="terms-list">
+                            <li data-i18n="termsPage.s7.sb3.l1">Registro escrito en el informe del trabajo final.</li>
+                            <li data-i18n="termsPage.s7.sb3.l2">Capturas de pantalla del estado de la plataforma en cada sprint.</li>
+                            <li data-i18n="termsPage.s7.sb3.l3">Videos de demostración funcional del producto en cada entrega.</li>
+                            <li data-i18n="termsPage.s7.sb3.l4">Historial de commits y <em>Collaboration Insights</em> de GitHub, que registran las contribuciones de cada integrante.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s8.title">8. Propiedad Intelectual</h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s8.l1">El diseño, código fuente, algoritmos, interfaces y documentación de <strong>VitalWatch</strong> son propiedad intelectual del equipo de <strong>VitaSync</strong>, desarrollados en el contexto del curso 1ASI0729 de la Universidad Peruana de Ciencias Aplicadas.</li>
+                        <li data-i18n="termsPage.s8.l2">El uso del servicio no transfiere al usuario ningún derecho de propiedad sobre el software ni sobre sus componentes.</li>
+                        <li data-i18n="termsPage.s8.l3">El equipo de <strong>VitaSync</strong> reconoce y respeta los derechos de propiedad intelectual de las herramientas, librerías y servicios de terceros utilizados en el desarrollo del producto, conforme a sus respectivas licencias.</li>
+                    </ul>
+                </div>
+
+                <!-- 9 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s9.title">9. Limitación de Responsabilidad</h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s9.l1"><strong>VitalWatch</strong> es una herramienta de apoyo a la decisión, no un sistema de diagnóstico médico ni un sustituto del criterio profesional clínico o administrativo.</li>
+                        <li data-i18n="termsPage.s9.l2">El equipo de <strong>VitaSync</strong> no será responsable por decisiones adoptadas por las instituciones o el personal basándose exclusivamente en los datos o alertas generadas por la plataforma, especialmente aquellas que deriven en consecuencias clínicas, laborales o legales.</li>
+                        <li data-i18n="termsPage.s9.l3">El equipo se compromete a informar oportunamente de cualquier fallo crítico, limitación técnica o vulnerabilidad identificada que pueda afectar la integridad de los datos o la correcta operación del sistema.</li>
+                        <li data-i18n="termsPage.s9.l4">El servicio se brinda en su estado actual (<em>as is</em>), propio de un proyecto académico en desarrollo, sin garantía de disponibilidad continua del 100%.</li>
+                    </ul>
+                </div>
+
+                <!-- 10 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s10.title">10. Modificaciones al Servicio y a los Términos</h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s10.l1">El equipo de <strong>VitaSync</strong> se reserva el derecho de modificar, actualizar o discontinuar el servicio o cualquier parte de él, así como los presentes Términos y Condiciones, notificando previamente a los usuarios con un plazo razonable.</li>
+                        <li data-i18n="termsPage.s10.l2">Las modificaciones a los presentes términos serán publicadas en la plataforma y entrarán en vigencia a partir de la fecha de publicación indicada. El uso continuado del servicio tras la notificación implica la aceptación de los nuevos términos.</li>
+                    </ul>
+                </div>
+
+                <!-- 11 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s11.title">11. Contacto</h2>
+
+                    <p data-i18n="termsPage.s11.p1">Para consultas, reportes de incidencias, solicitudes de información sobre el tratamiento de datos o cualquier comunicación relacionada con estos Términos y Condiciones, el usuario puede contactar al equipo de <strong>VitaSync</strong> a través de los canales habilitados en la plataforma o mediante los repositorios oficiales del proyecto en GitHub.</p>
+                </div>
+
+                <!-- 12 -->
+                <div class="terms-block">
+                    <h2 data-i18n="termsPage.s12.title">12. Marco Legal Aplicable</h2>
+
+                    <p data-i18n="termsPage.s12.p1">Los presentes Términos y Condiciones se rigen por la legislación peruana vigente, incluyendo:</p>
+
+                    <ul class="terms-list">
+                        <li data-i18n="termsPage.s12.l1"><strong>Ley N.° 29733</strong> – Ley de Protección de Datos Personales del Perú y su reglamento.</li>
+                        <li data-i18n="termsPage.s12.l2">Los principios del <strong>Código de Ética del Colegio de Ingenieros del Perú (CIP)</strong>.</li>
+                        <li data-i18n="termsPage.s12.l3">Los principios del <strong>Código de Ética de Ingeniería de Software de ACM/IEEE</strong> (versión vigente).</li>
+                    </ul>
+
+                    <p data-i18n="termsPage.s12.p2">Cualquier controversia derivada del uso de la plataforma que no pueda resolverse de mutuo acuerdo será sometida a la jurisdicción de los tribunales competentes de la ciudad de Lima, Perú.</p>
+                </div>
+
+                <!-- FOOTNOTE -->
+                <div class="terms-footer-note">
+                    <br></br>
+                    <p data-i18n="termsPage.footer">Documento elaborado por el equipo <strong>VitaSync</strong> — Universidad Peruana de Ciencias Aplicadas (UPC), Ciclo 2026-10.Desarrollado en el marco del curso <em>1ASI0729 – Desarrollo de Aplicaciones Open Source</em>, bajo la supervisión del docente Ivan Robles Fernández.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/images/text-title.png" alt="VitaSync Logo" class="footer-logo"
+                    style="filter: brightness(0) invert(1); opacity: 0.8; height: 30px;">
+                <p class="footer-tagline" data-i18n="footer.tagline">Monitoreo preventivo para una atención más segura.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4 data-i18n="footer.platform">Plataforma</h4>
+                    <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
+                    <a href="#beneficios" data-i18n="nav.benefits">Beneficios</a>
+                    <a href="#planes" data-i18n="nav.plans">Planes</a>
+                </div>
+                <div class="link-column">
+                    <h4 data-i18n="footer.company">Empresa</h4>
+                    <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+                    <a href="terms.html" href="#terminos" data-i18n="footer.tos">Términos de servicio</a>
+                    <a href="#" data-i18n="footer.privacy">Políticas de privacidad</a>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h4 data-i18n="footer.follow">Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer.copy">&copy; 2026 VitaSync. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="assets/scripts/i18n.js"></script>
+<script src="assets/scripts/main.js"></script>
+
+</body>
+</html>
