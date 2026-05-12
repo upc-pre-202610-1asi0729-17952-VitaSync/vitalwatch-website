@@ -144,3 +144,6 @@ export const translations = {
     "terms.page.title": "Términos y Condiciones de Uso"
   }
 };
+
+
+    

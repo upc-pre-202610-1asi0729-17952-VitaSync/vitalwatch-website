@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLang = 'es'; // Idioma por defecto
     
     // Objeto con todas las traducciones
-    const translationsData = {
+const translationsData = {
         es: {
             "nav.home": "Inicio",
             "nav.features": "Funcionalidades",
