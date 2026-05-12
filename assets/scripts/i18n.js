@@ -68,7 +68,8 @@ export const translations = {
     "contact.form.submit": "Send",
     "footer.terms": "Terms and conditions",
     "contact.cta": "Contact us",
-    "copyright": "© 2026 VitalWatch - All rights reserved"
+    "copyright": "© 2026 VitalWatch - All rights reserved",
+    "terms.page.title": "Terms and Conditions of Use"
   },
   es_419: {
     "navbar.home": "Inicio",
@@ -139,6 +140,7 @@ export const translations = {
     "contact.form.submit": "Enviar",
     "footer.terms": "Términos y condiciones",
     "contact.cta": "Escribenos o llámanos",
-    "copyright": "© 2026 VitalWatch - Todos los derechos reservados"
+    "copyright": "© 2026 VitalWatch - Todos los derechos reservados",
+    "terms.page.title": "Términos y Condiciones de Uso"
   }
 };
