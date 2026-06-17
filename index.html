@@ -42,11 +42,11 @@
 
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Inicio</a></li>
-                    <li><a href="index.html#funcionalidades" class="nav-link"
-                            data-i18n="nav.features">Funcionalidades</a></li>
-                    <li><a href="index.html#beneficios" class="nav-link" data-i18n="nav.benefits">Beneficios</a></li>
-                    <li><a href="index.html#planes" class="nav-link" data-i18n="nav.plans">Planes</a></li>
+                    <li><a href="#inicio" class="nav-link active" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#como-funciona" class="nav-link" data-i18n="nav.how_it_works">Cómo funciona</a></li>
+                    <li><a href="#funcionalidades" class="nav-link" data-i18n="nav.features">Funcionalidades</a></li>
+                    <li><a href="#roles" class="nav-link" data-i18n="nav.roles">Roles</a></li>
+                    <li><a href="#planes" class="nav-link" data-i18n="nav.plans">Planes</a></li>
                     <li><a href="terms.html" class="nav-link" data-i18n="nav.terms">Términos</a></li>
                 </ul>
 
@@ -78,20 +78,49 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <div class="badge" data-i18n="hero.badge">Sistema clínico preventivo</div>
-                    <h1 class="hero-title" data-i18n="hero.title">Monitoreo inteligente para una atención segura</h1>
+                    <h1 class="hero-title" data-i18n="hero.title">Previene el agotamiento médico con monitoreo inteligente</h1>
                     <p class="hero-subtitle" data-i18n="hero.subtitle">
-                        VitalWatch ayuda a clínicas y hospitales a detectar señales de fatiga en el personal clínico,
-                        activar alertas preventivas y tomar decisiones oportunas para proteger a su equipo y a sus
-                        pacientes.
+                        VitalWatch ayuda a centros médicos a organizar equipos, gestionar turnos, monitorear indicadores de fatiga y actuar antes de que el personal llegue a un estado crítico.
                     </p>
                     <div class="hero-cta">
                         <a href="#planes" class="btn btn-primary" data-i18n="hero.cta.plans">Ver planes</a>
+                        <a href="#funcionalidades" class="btn btn-outline" data-i18n="hero.cta.features">Ver funcionalidades</a>
                     </div>
                 </div>
 
                 <img src="assets/images/monitoreo.png" alt="waza">
+            </div>
+        </section>
 
-
+        <!-- How it Works Section -->
+        <section id="como-funciona" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title" data-i18n="how_it_works.title">¿Cómo funciona VitalWatch?</h2>
+                    <p class="section-subtitle" data-i18n="how_it_works.subtitle">Activa la plataforma, invita a tu equipo y empieza a monitorear el bienestar del personal médico desde un solo lugar.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3 class="step-title" data-i18n="how_it_works.step1.title">Registra tu centro médico</h3>
+                        <p class="step-desc" data-i18n="how_it_works.step1.desc">El administrador crea la organización, elige un plan y activa la plataforma.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3 class="step-title" data-i18n="how_it_works.step2.title">Invita a tu personal</h3>
+                        <p class="step-desc" data-i18n="how_it_works.step2.desc">Envía invitaciones por correo a supervisores clínicos y personal médico para que completen su registro.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3 class="step-title" data-i18n="how_it_works.step3.title">Organiza equipos y turnos</h3>
+                        <p class="step-desc" data-i18n="how_it_works.step3.desc">Asigna médicos a equipos, define supervisores y gestiona turnos clínicos.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">4</div>
+                        <h3 class="step-title" data-i18n="how_it_works.step4.title">Monitorea riesgos y toma acción</h3>
+                        <p class="step-desc" data-i18n="how_it_works.step4.desc">Visualiza alertas, fatiga, anomalías y acciones preventivas para cuidar al personal.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -396,6 +425,61 @@
             </div>
         </section>
 
+        <!-- Roles Section -->
+        <section id="roles" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title" data-i18n="roles.title">Diseñado para cada rol del centro médico</h2>
+                </div>
+                <div class="roles-grid">
+                    <div class="role-card">
+                        <div class="role-icon-container">
+                            <span class="role-icon">💼</span>
+                        </div>
+                        <h3 class="role-title" data-i18n="roles.admin.title">Administrador hospitalario</h3>
+                        <p class="role-desc" data-i18n="roles.admin.desc">Gestiona la organización, planes, usuarios, invitaciones, equipos, reportes y auditoría desde un panel centralizado.</p>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-icon-container">
+                            <span class="role-icon">🩺</span>
+                        </div>
+                        <h3 class="role-title" data-i18n="roles.supervisor.title">Supervisor clínico</h3>
+                        <p class="role-desc" data-i18n="roles.supervisor.desc">Supervisa equipos, revisa personal en riesgo, gestiona alertas, anomalías, turnos y acciones preventivas.</p>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-icon-container">
+                            <span class="role-icon">👩‍⚕️</span>
+                        </div>
+                        <h3 class="role-title" data-i18n="roles.doctor.title">Personal médico</h3>
+                        <p class="role-desc" data-i18n="roles.doctor.desc">Consulta su estado de salud, signos vitales, turnos asignados y recomendaciones de recuperación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modules Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title" data-i18n="modules.title">Módulos Incluidos</h2>
+                </div>
+                <div class="modules-container">
+                    <div class="module-chip" data-i18n="modules.m1">Gestión de personal</div>
+                    <div class="module-chip" data-i18n="modules.m2">Invitaciones por correo</div>
+                    <div class="module-chip" data-i18n="modules.m3">Equipos clínicos</div>
+                    <div class="module-chip" data-i18n="modules.m4">Turnos médicos</div>
+                    <div class="module-chip" data-i18n="modules.m5">Evaluación de riesgo</div>
+                    <div class="module-chip" data-i18n="modules.m6">Alertas clínicas</div>
+                    <div class="module-chip" data-i18n="modules.m7">Anomalías biométricas</div>
+                    <div class="module-chip" data-i18n="modules.m8">Acciones preventivas</div>
+                    <div class="module-chip" data-i18n="modules.m9">Recuperación del personal</div>
+                    <div class="module-chip" data-i18n="modules.m10">Reportes administrativos</div>
+                    <div class="module-chip" data-i18n="modules.m11">Auditoría del sistema</div>
+                    <div class="module-chip" data-i18n="modules.m12">Suscripción y planes</div>
+                </div>
+            </div>
+        </section>
+
         <!-- Beneficios Section -->
         <section id="beneficios" class="section">
             <div class="container">
@@ -478,6 +562,39 @@
                         diferentes niveles de operación
                         y supervisión.
                     </p>
+                </div>
+
+                <div class="planes-cards-grid">
+                    <!-- Basic Card -->
+                    <div class="plan-summary-card">
+                        <div class="plan-card-header">
+                            <h3 class="plan-card-name" data-i18n="plans.basic.name">Basic</h3>
+                            <div class="plan-card-price">$79<span class="plan-card-period">/mes</span></div>
+                        </div>
+                        <p class="plan-card-desc" data-i18n="plans.basic.summary">Para clínicas pequeñas que necesitan gestión esencial, monitoreo básico y control inicial de riesgos.</p>
+                        <a href="https://app.vitalwatch.space/register-organization/basic" class="btn btn-outline btn-block plan-card-btn" data-i18n="plans.cta.basic">Elegir plan</a>
+                    </div>
+                    
+                    <!-- Pro Card (Recomendado) -->
+                    <div class="plan-summary-card recommended">
+                        <div class="plan-badge-recommended" data-i18n="plans.popular.badge">Más recomendado</div>
+                        <div class="plan-card-header">
+                            <h3 class="plan-card-name" data-i18n="plans.pro.name">Professional</h3>
+                            <div class="plan-card-price">$149<span class="plan-card-period">/mes</span></div>
+                        </div>
+                        <p class="plan-card-desc" data-i18n="plans.pro.summary">Plan recomendado para clínicas medianas que necesitan operación completa, alertas, reportes, auditoría y prevención clínica.</p>
+                        <a href="https://app.vitalwatch.space/register-organization/professional" class="btn btn-primary btn-block plan-card-btn" data-i18n="plans.cta.pro">Elegir plan</a>
+                    </div>
+                    
+                    <!-- Enterprise Card -->
+                    <div class="plan-summary-card">
+                        <div class="plan-card-header">
+                            <h3 class="plan-card-name" data-i18n="plans.ent.name">Enterprise</h3>
+                            <div class="plan-card-price">$299<span class="plan-card-period">/mes</span></div>
+                        </div>
+                        <p class="plan-card-desc" data-i18n="plans.ent.summary">Para hospitales grandes o redes clínicas con operación avanzada, integraciones y capacidad ampliada.</p>
+                        <a href="https://app.vitalwatch.space/register-organization/enterprise" class="btn btn-outline btn-block plan-card-btn" data-i18n="plans.cta.ent">Elegir plan</a>
+                    </div>
                 </div>
 
                 <div class="table-responsive">
@@ -727,6 +844,20 @@
             </div>
         </section>
 
+        <!-- Final CTA Section -->
+        <section class="section final-cta-section">
+            <div class="container">
+                <div class="final-cta-card">
+                    <h2 class="final-cta-title" data-i18n="cta_final.title">Comienza a cuidar a quienes cuidan</h2>
+                    <p class="final-cta-subtitle" data-i18n="cta_final.subtitle">Registra tu centro médico, invita a tu equipo y empieza a monitorear el bienestar del personal desde una sola plataforma.</p>
+                    <div class="final-cta-buttons">
+                        <a href="#planes" class="btn btn-primary" data-i18n="cta_final.choose_plan">Elegir un plan</a>
+                        <a href="https://app.vitalwatch.space/sign-in" class="btn btn-outline" data-i18n="cta_final.login">Ingresar a la plataforma</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer">
             <div class="container footer-container">
@@ -741,7 +872,8 @@
                     <div class="link-column">
                         <h4 data-i18n="footer.platform">Plataforma</h4>
                         <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
-                        <a href="#beneficios" data-i18n="nav.benefits">Beneficios</a>
+                        <a href="#como-funciona" data-i18n="nav.how_it_works">Cómo funciona</a>
+                        <a href="#roles" data-i18n="nav.roles">Roles</a>
                         <a href="#planes" data-i18n="nav.planes">Planes</a>
                     </div>
                     <div class="link-column">
