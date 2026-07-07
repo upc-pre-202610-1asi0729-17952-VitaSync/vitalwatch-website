@@ -65,6 +65,7 @@ const translationsData = {
             "features.f6.title": "Administración hospitalaria",
             "features.f6.desc": "Gestiona usuarios, roles, equipos, planes, reportes y auditoría desde un panel centralizado.",
             "features.aboutProduct.title": "Sobre el producto",
+            "features.aboutTeam.title": "Sobre el equipo",
 
             "modules.title": "Módulos Incluidos",
             "modules.m1": "Gestión de personal",
@@ -378,6 +379,7 @@ const translationsData = {
             "features.f6.title": "Hospital Administration",
             "features.f6.desc": "Manage users, roles, teams, plans, reports, and audits from a centralized panel.",
             "features.aboutProduct.title": "About The Product",
+            "features.aboutTeam.title": "About The Team",
 
             "modules.title": "Included Modules",
             "modules.m1": "Staff Management",
