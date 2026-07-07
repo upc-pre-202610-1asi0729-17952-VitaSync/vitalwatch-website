@@ -64,6 +64,7 @@ const translationsData = {
             "features.f5.desc": "Registra pausas, acciones preventivas y recomendaciones según el nivel de fatiga.",
             "features.f6.title": "Administración hospitalaria",
             "features.f6.desc": "Gestiona usuarios, roles, equipos, planes, reportes y auditoría desde un panel centralizado.",
+            "features.aboutProduct.title": "Sobre el producto",
 
             "modules.title": "Módulos Incluidos",
             "modules.m1": "Gestión de personal",
@@ -376,6 +377,7 @@ const translationsData = {
             "features.f5.desc": "Record breaks, preventive actions, and recommendations based on the fatigue level.",
             "features.f6.title": "Hospital Administration",
             "features.f6.desc": "Manage users, roles, teams, plans, reports, and audits from a centralized panel.",
+            "features.aboutProduct.title": "About The Product",
 
             "modules.title": "Included Modules",
             "modules.m1": "Staff Management",
